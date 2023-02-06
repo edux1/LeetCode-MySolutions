@@ -17,9 +17,4 @@ class Solution(object):
         j = 0
         while j < k and len(q) >= 1:
             nums[j] = q.popleft()
-            j += 1 
-
-
-
-
-
+            j += 1
