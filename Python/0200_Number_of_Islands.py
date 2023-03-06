@@ -13,7 +13,6 @@ class Solution(object):
             dfs(i, j-1)
             dfs(i, j+1)
 
-        visited, queue = [], []
         m, n = len(grid), len(grid[0])
         count = 0
 
