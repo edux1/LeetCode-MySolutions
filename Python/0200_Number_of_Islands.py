@@ -18,8 +18,7 @@ class Solution(object):
 
         for i in range(m):
             for j in range(n):
-                if grid[i][j] == "1":
-                    print((i, j))
+                if grid[i][j] == "1":   
                     count += 1
                     dfs(i,j)
 
