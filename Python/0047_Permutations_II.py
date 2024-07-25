@@ -12,6 +12,7 @@ class Solution(object):
             n = len(nums)
             if n == 0:
                 permutations.append(permutation)
+                return
             
             for i in range(n):
                 new_list = list(permutation)
