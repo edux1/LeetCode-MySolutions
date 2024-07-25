@@ -12,7 +12,6 @@ class Solution(object):
             n = len(nums)
             if n == 0:
                 permutations.append(permutation)
-                return permutations
             
             for i in range(n):
                 new_list = list(permutation)
@@ -20,14 +19,12 @@ class Solution(object):
                 reduced_list = list(nums)
                 reduced_list.pop(i)
                 if i == 0 or (i > 0 and nums[i] != nums[i-1]):
-                    permutations = permute(permutations, new_list, reduced_list)
-            return permutations
+                    permute(permutations, new_list, reduced_list)
 
         permutations = []
         for i in range(n):
             reduced_list = list(nums)
             reduced_list.pop(i)
             if i == 0 or (i > 0 and nums[i] != nums[i-1]):
-                permutations = permute(permutations, [nums[i]], reduced_list)
+                permute(permutations, [nums[i]], reduced_list)
         return permutations
-        
