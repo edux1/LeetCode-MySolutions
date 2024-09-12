@@ -9,6 +9,8 @@ class Solution(object):
         :type head: ListNode
         :rtype: ListNode
         """
+        # Time Complexity: O(N)
+        # Space Complexity: O(1)
         p = head
         count = 0
         while head.next:
