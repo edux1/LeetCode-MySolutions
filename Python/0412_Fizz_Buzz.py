@@ -4,7 +4,7 @@ class Solution(object):
         :type n: int
         :rtype: List[str]
         """
-         # Time Complexity: O(N)
+        # Time Complexity: O(N)
         # Space Complexity: O(1)
         arr = []
         for i in range(1, n+1):
