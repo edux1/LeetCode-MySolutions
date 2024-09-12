@@ -4,7 +4,8 @@ class Solution(object):
         :type accounts: List[List[int]]
         :rtype: int
         """
-
+        # Time Complexity: O(N*M)
+        # Space Complexity: O(1)
         max_wealth = 0
         for i in range(len(accounts)):
             cnt = 0
