@@ -4,6 +4,8 @@ class Solution(object):
         :type nums: List[int]
         :rtype: None Do not return anything, modify nums in-place instead.
         """
+        # Time Complexity: O(N)
+        # Space Complexity: O(1)
         slow, fast, zeros = 0, 0, 0
         n = len(nums)
 
