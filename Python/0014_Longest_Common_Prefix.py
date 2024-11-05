@@ -6,8 +6,6 @@ class Solution(object):
         """
         # Time Complexity: O(N*M)
         # Space Complexity: O(N)
-        exit = False
-        
         i = 0
         while i < len(strs[0]):
             char = strs[0][i]
