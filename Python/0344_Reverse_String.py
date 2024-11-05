@@ -4,10 +4,12 @@ class Solution(object):
         :type s: List[str]
         :rtype: None Do not return anything, modify s in-place instead.
         """
-        l, r = 0, len(s)-1
+        # Time Complexity: O(N)
+        # Space Complexity: O(1)
+        n = len(s)
+        l, r = 0, n-1
+
         while l < r:
-            aux = s[l]
-            s[l] = s[r]
-            s[r] = aux
+            s[l], s[r] = s[r], s[l]
             l += 1
             r -= 1
