@@ -6,10 +6,10 @@ class Solution(object):
         """
         # Time Complexity: O(N)
         # Space Complexity: O(1)
-        slow, fast, zeros = 0, 0, 0
-        n = len(nums)
+        slow = 0
 
-        for fast in range(n):
+        for fast in range(len(nums)):
             if nums[fast] != 0:
-                nums[fast], nums[slow] = nums[slow], nums[fast]
+                if fast != slow:
+                    nums[slow], nums[fast] = nums[fast], nums[slow]
                 slow += 1
