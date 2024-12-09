@@ -4,12 +4,13 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        # Time Complexity: O(N)
-        # Space Complexity: O(1)
-        i = 0
-        for j in range(len(nums)):
-            if nums[i] != nums[j]:
-                nums[i+1] = nums[j]
-                i += 1
-        
-        return i+1
+        # Time complexity: O(N)
+        # Space complexity: O(1)
+        slow = 1
+
+        for fast in range(1, len(nums)):
+            if nums[fast] != nums[fast - 1]:
+                nums[slow] = nums[fast]
+                slow += 1 
+
+        return slow
